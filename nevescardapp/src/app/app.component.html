@@ -1,0 +1,20 @@
+
+<app-neves-card  *ngFor="let v of x"
+       [nevesIndx] = "v.indx"
+       [nevesFeatures]="v.features"
+       [nevesAction]="v.nevesAction"
+       [nevesCardTitleMain] = "v.nevesCardTitleMain"
+       [nevesCardCover] = "v.nevesCardCover"
+       [nevesCardAvatarImg] ="v.nevesCardAvatarImg"
+       [nevesCardAvatarTitle] = "v.nevesCardAvatarTitle" 
+       [nevesCardAvatarDesc] = "v.nevesCardAvatarDesc"
+       [nevesCardMainDesc] ="v.nevesCardMainDesc"
+       [tblData]="v.tbldata"
+       [listData] = "v.listData"
+       (outAdd)="fnAdd($event)"
+       (outDel)="fnDel($event)"
+       (outEdit)="fnEdit($event)"
+       (outLike)="fnLike($event)"
+       (outShare)="fnShare($event)"
+></app-neves-card>
+

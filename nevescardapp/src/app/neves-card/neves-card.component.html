@@ -1,0 +1,55 @@
+<div class="neves-card-container-main">
+<div class="neves-card-container" >
+    <div class="neves-card-title-main" appSectionHider [isFeatureRequested]="nevesFeatures" [currElem]="'title-main'" ><h2>{{nevesCardTitleMain}}</h2></div>
+    <div class="neves-card-cover" appSectionHider [isFeatureRequested]="nevesFeatures" [currElem]="'card-cover'">
+        <img [src]="nevesCardCover" > 
+    </div>
+    <div class="neves-card-avatar-wrapper" appSectionHider [isFeatureRequested]="nevesFeatures" [currElem]="'avatar'">
+           <div class="neves-card-avatar-img"><img [src]="nevesCardAvatarImg"></div>
+           <div class="neves-card-avatar-details">
+                <div class="neves-card-avatar-title"><h4>{{nevesCardAvatarTitle}}</h4></div>
+                <div class="neves-card-avatar-desc"><p>{{nevesCardAvatarDesc}}</p></div>
+           </div>
+    </div>
+    <div class="neves-card-main-desc"  appSectionHider [isFeatureRequested]="nevesFeatures" [currElem]="'main-desc'">       
+        <p>{{nevesCardMainDesc}}</p>
+    </div>
+    <div class="neves-card-tbl" appSectionHider [isFeatureRequested]="nevesFeatures" [currElem]="'tbl'">
+         <table>
+                <thead>
+                    <tr>
+                        <th *ngFor="let head of headers">{{head}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr   *ngFor="let row of tblData">
+                        <td  *ngFor="let head of headers">
+                            {{ row[head] }}
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                </tfoot>
+        </table>     
+    </div>
+
+    <div class="neves-card-list" appSectionHider [isFeatureRequested]="nevesFeatures" [currElem]="'list'">
+       <p>{{listData.list_title}}</p>
+       <ol>
+            <li *ngFor="let dt of listData.list_content">
+                {{dt}}
+            </li>
+       </ol>
+    </div>
+
+    <div class="neves-card-buttons">
+        <button type="button"  (click)='nevesAdd(nevesIndx)' appSectionHider [isFeatureRequested]="nevesFeatures" [currElem]="'btn-add'">+</button>
+        <button type="button"   (click)='nevesDel(nevesIndx)' appSectionHider [isFeatureRequested]="nevesFeatures" [currElem]="'btn-del'">-</button>
+        <button type="button"  (click)='nevesEdit(nevesIndx)' appSectionHider [isFeatureRequested]="nevesFeatures" [currElem]="'btn-edit'"><img src="assets/images/edit.png"></button>
+        <button type="button"   (click)='nevesLike(nevesIndx)' appSectionHider [isFeatureRequested]="nevesFeatures" [currElem]="'btn-like'"><img src="assets/images/heart.png"></button>
+        <button type="button"  (click)='nevesShare(nevesIndx)' appSectionHider [isFeatureRequested]="nevesFeatures" [currElem]="'btn-share'"><img src="assets/images/share.png"></button>
+        
+    </div>
+
+</div>
+</div>

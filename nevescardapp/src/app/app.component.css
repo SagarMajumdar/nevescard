@@ -1,0 +1,119 @@
+
+.f-container {
+    width: 100%;
+    font-family: sans-serif;
+    display:none;
+  }
+  
+  .dv-br-rd-outer {
+    width: 30em;
+    height: 30em;
+    background-color:#47ffd4;
+    border-radius:50% 10% 10% 80% / 95% 40% 70% 70%;
+    margin:0 auto; 
+    transition: all 1200ms;
+  }
+  
+  .dv-br-rd-in-one {
+    width: 95%;
+    height:95%;
+    background-color: springgreen;
+    border-radius:80% 15% 10% 70% / 60% 60% 65% 20%;;
+    margin:0 auto;
+    transition: all 3000ms;
+  }
+  .dv-br-rd-in-two {
+    width: 95%;
+    height:95%;
+    background-color: dodgerblue;
+    border-radius:60% 10% 60% 80% / 65% 40% 60% 40%;
+    margin:0 auto;
+    transition: all 800ms;
+  }
+  
+  
+  .dv-br-rd-in-three { 
+    width: 95%;
+    height:95%;
+    border-radius: 5% 30% 30% 70% / 60% 60% 60% 50%;
+  background-color:
+  #ffc107;
+  margin:0 auto;
+  transition: all 1500ms;
+  }
+  
+  .dv-text-head {
+    padding:20%;
+  }
+  
+  .dv-text-head h1{
+    font-weight: normal;
+    color: white;
+  }
+  
+  
+  .dv-br-rd-in-two:hover{
+    border-radius:5% 10% 60% 80% / 60% 40% 60% 40%;
+  
+  }
+  
+  .dv-br-rd-in-one:hover{
+    border-radius:52% 10% 150% 70% / 9% 4% 75% 70%;
+  
+  }
+  
+  .dv-br-rd-in-three:hover { 
+    _border-radius: 50% 15% 30% 20% / 60% 10% 60% 80%;
+    border-radius: 70% 17% 65% 74% / 97% 60% 46% 50%;
+  }
+  .dv-br-rd-outer:hover{
+    border-radius:60% 10% 60% 80% / 65% 40% 60% 40%;
+  
+  }
+  
+  button.btn-prev-next  {
+    border:0px;
+    margin-left: 2px;
+    margin-right:2px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color:white;
+    color:
+      #ffc107;
+      font-size: larger;
+      font-weight: bolder;
+  }
+  
+  .dv_fb_github , .dv_resume{
+    margin-top:10px;
+    margin-bottom: 10px;
+    font-size: smaller;
+    color: white;
+  }
+  .dv_fb_github a, .dv_resume button.btn-dl-resume
+  {
+    background-color: transparent;
+    text-decoration: none;
+    color:white;
+    border: 1px solid #ffc107;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 200ms;
+  }
+  .dv_fb_github a:hover, .dv_resume button.btn-dl-resume:hover
+  {
+    border: 1px solid white;
+  }
+  span {
+    
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    color:white
+  }
+  button {
+    cursor: pointer;
+  }

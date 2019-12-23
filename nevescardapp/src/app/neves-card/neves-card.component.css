@@ -1,0 +1,133 @@
+*{
+    font-family: sans-serif;
+}
+.neves-card-title-main , 
+.neves-card-avatar-wrapper,
+.neves-card-main-desc,
+.neves-card-buttons,
+.neves-card-tbl,
+.neves-card-list {
+    margin-left:4px;
+    margin-right: 4px;
+}
+.neves-card-cover img{
+    width:100%;
+}
+.neves-card-container-main 
+{
+    display: inline-block;
+}
+.neves-card-container {
+    max-width:350px;
+    border: 1px solid gainsboro;
+    border-radius: 2px;
+    margin:5px;
+    box-shadow: 0px 0px 10px 0px gainsboro;
+
+}
+.neves-card-avatar-wrapper {
+    margin-top:10px;
+    width:100%;
+}
+.neves-card-avatar-img{
+    width: 48px;
+    height: 48px;
+    border-radius: 2px;
+    overflow: hidden;
+    display: inline-block;
+}
+.neves-card-avatar-img img {
+    width:100%;
+    height:100%;
+}
+.neves-card-avatar-details {
+    margin-left:5px;
+    display: inline-block;
+    width:65%;
+    
+}
+.neves-card-avatar-details h4 {
+    margin:0px;
+    text-transform: uppercase;
+    font-size: small;
+}
+.neves-card-avatar-details p {
+    margin: 0px;
+    font-size: smaller;
+    
+}
+.neves-card-main-desc p {
+    font-size: small;
+}
+.neves-card-main-desc
+{
+
+    height: 125px;
+    overflow-y: scroll;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.neves-card-buttons {
+   
+    text-align: right;
+}
+.neves-card-buttons button {
+    background-color: white;
+    border: 0px;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    color:gray;
+}
+
+.neves-card-tbl {
+    _border-radius: 3px;
+    _overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.neves-card-tbl table {
+    min-width: 100%;
+    border-collapse: collapse;
+}
+thead th {
+    text-align: left;
+    background-color:#616161;
+    color:white;
+    font-weight: normal;
+    font-size: small;
+    padding: 5px;
+}
+tbody td {
+    font-size: small;
+    border-left:1px solid white;
+    border-left: 1px solid #bbbaba;
+    padding:4px;
+}
+tbody tr:nth-child(odd) {
+    background-color: gainsboro;
+} 
+.neves-card-list {
+    max-height: 200px;
+    overflow-y: scroll;
+    font-size: smaller;
+    margin-bottom: 10px;
+}
+.neves-card-list p 
+{
+    background-color: #616161;
+    color:white;
+    padding:4px;
+    border-radius: 2px;
+}
+.neves-card-list ol li {
+    margin-bottom: 2px;
+    padding:3px;
+    background-color: gainsboro;
+    border-radius: 2px;
+} 
